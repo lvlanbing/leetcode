@@ -18,6 +18,8 @@ public:
         for(int i = 3; i <= n; ++i) {
             dp[i] = min(dp[i - 1] + cost[i - 1] , dp[i - 2] + cost[i - 2]);
         }
+        // for(int i = 1; i <= n; ++i)
+        //     cout<<dp[i]<<" ";
         return dp[n];        
     }
 };
