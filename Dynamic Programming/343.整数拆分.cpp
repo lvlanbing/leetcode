@@ -7,6 +7,8 @@
 // @lc code=start
 class Solution {
 public:
+
+    //回溯
     // int MAX = 0;
     // int sum = 0, num = 1;
     // void backtracking(int n, int start) {
@@ -51,6 +53,7 @@ public:
 
         // dfs(1, n - 1, n);
 
+        // 方法数值
         // if(n == 2) return 1;
         // if(n == 3) return 2;
         // int MAX = 0;
@@ -68,9 +71,9 @@ public:
         //         MAX = temp;
         //     }
         // }
-
         // return MAX;
         
+        //方法dp
         // 拆分数值（下标）得到的最大乘积
         vector<int> dp(n + 1);
         dp[2] = 1;
